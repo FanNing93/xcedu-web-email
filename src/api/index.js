@@ -1,24 +1,21 @@
 import request from './request'
-
-export function getSiteConfig () {
-  return request.get('/sites/current/config').then(({ data }) => data.siteConfig)
+// 修改提交数据
+export function updateEmail (form) {
+  return request.put('/api-mail/mail', form)
 }
-
-export function login (post) {
-  return request.post('/user/login', post).then(({ data }) => {
-    const { token, user, profile } = data
-    return { token, user, profile }
-  })
+// 修改数据
+export function getEmailById (id) {
+  return request.get('/api-mail/mail/' + id)
 }
-
-export function sendVerifyCode (phone) {
-  return request.post('/send/verify/code', { phone })
+// 查询列表
+export function getEmailList (params) {
+  return request.get('/api-mail/mail', params)
 }
-
-export function verifyUser (post) {
-  return request.post('/verify/user', post).then(({ data }) => data)
+// 新建保存
+export function createEmail (form) {
+  return request.post('/api-mail/mail', form)
 }
-
-export function resetPwd (post) {
-  return request.post('/user/password/reset', post)
+// 删除
+export function deleteEmailById (id) {
+  return request.delete('/api-mail/mail/' + id)
 }

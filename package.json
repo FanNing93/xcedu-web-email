@@ -83,6 +83,7 @@
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5",
     "url-loader": "^3.0.0",
+    "vue-giant-tree": "^0.1.2",
     "vue-loader": "^15.9.0",
     "vue-server-renderer": "^2.6.11",
     "vue-style-loader": "^4.1.2",

@@ -1425,6 +1425,13 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
+"@ztree/ztree_v3@^3.5.40":
+  version "3.5.44"
+  resolved "https://registry.npm.taobao.org/@ztree/ztree_v3/download/@ztree/ztree_v3-3.5.44.tgz#940890a91483bc8a7347f4fe4c9e6e3ffc7d61ec"
+  integrity sha1-lAiQqRSDvIpzR/T+TJ5uP/x9Yew=
+  dependencies:
+    jquery ">=1.4.4"
+
 abab@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.3.tgz#623e2075e02eb2d3f2475e49f99c91846467907a"
@@ -5771,6 +5778,11 @@ jest@^25.1.0:
     import-local "^3.0.2"
     jest-cli "^25.1.0"
 
+jquery@>=1.4.4, jquery@^3.4.1:
+  version "3.5.1"
+  resolved "https://registry.npm.taobao.org/jquery/download/jquery-3.5.1.tgz?cache=0&sync_timestamp=1588633260500&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjquery%2Fdownload%2Fjquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
+  integrity sha1-17TQjhv9uGrS8aPQOeoXMEcXq7U=
+
 js-base64@^2.1.8:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
@@ -9918,6 +9930,14 @@ vue-eslint-parser@^7.0.0:
     espree "^6.1.2"
     esquery "^1.0.1"
     lodash "^4.17.15"
+
+vue-giant-tree@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npm.taobao.org/vue-giant-tree/download/vue-giant-tree-0.1.2.tgz#70cbaaabe1f82e10f59d086dc1188b2621dc54a3"
+  integrity sha1-cMuqq+H4LhD1nQhtwRiLJiHcVKM=
+  dependencies:
+    "@ztree/ztree_v3" "^3.5.40"
+    jquery "^3.4.1"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"

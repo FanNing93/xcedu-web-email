@@ -38,6 +38,7 @@ const devServerOptions = () => {
     port: devEnvConfig.DEV_SERVER_PORT,
     compress: true,
     open: true,
+    openPage: 'user/login',
     hot: true,
     headers: {
       'Access-Control-Allow-Origin': '*'
@@ -110,6 +111,7 @@ const baseConf = (env = 'production') => ({
       use: [{
         loader: 'eslint-loader',
         options: {
+          fix: true,
           failOnError: true,
           failOnWarning: true,
           cache: resolve('.cache/eslint')
