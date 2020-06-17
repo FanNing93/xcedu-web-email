@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
     'standard',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
+    // 'plugin:@typescript-eslint/eslint-recommended',
+    // 'plugin:@typescript-eslint/recommended',
     'plugin:vue/recommended',
   ],
   root: true,
@@ -12,7 +12,7 @@ module.exports = {
       legacyDecorators: true
     }
   },
-  plugins: ['@typescript-eslint'],
+  // plugins: ['@typescript-eslint'],
   env: {
     browser: true,
     node: true
@@ -53,8 +53,8 @@ module.exports = {
     'no-new': 0,
     'no-fallthrough': 0,
     'no-unreachable': 0,
-    'no-unneeded-ternary': 0,
-    '@typescript-eslint/explicit-function-return-type': 0
+    'no-unneeded-ternary': 0
+    // '@typescript-eslint/explicit-function-return-type': 0
   },
   globals: {
     Vue: 'readonly',
